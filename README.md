@@ -4,7 +4,7 @@ Talk on data cleaning principles for a 2023-03-21 seminar at
 UW-Madison in the [Computation and Informatics in Biology and
 Medicine](https://cibm.wisc.edu) program.
 This is a slightly expanded version of a talk I gave at
-[csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
+[csv,conf,v6](https://csvconf.com/), 2021-05-04.
 
 - [slides pdf](https://kbroman.org/Talk_DataCleaning2023/data_cleaning.pdf)
 - [slides pdf with notes](https://kbroman.org/Talk_DataCleaning2023/data_cleaning_notes.pdf)
