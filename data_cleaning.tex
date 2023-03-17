@@ -654,9 +654,10 @@ apply to the processing of RNA-seq data?
 \vspace{-15mm} \hspace{0.4\textwidth}
 {\princolorD 14. Ask questions}
 
-\hfill
-\begin{minipage}[t]{0.9\textwidth}
+\vspace{10mm}
 
+\hfill
+\begin{minipage}[t]{0.95\textwidth}
 
 \bbi
 \item[] When were the data gathered?
@@ -686,13 +687,26 @@ apply to the processing of RNA-seq data?
 \vspace{-15mm} \hspace{0.4\textwidth}
 {\princolorD 15. Ask for the primary data}
 
-\hfill
-\begin{minipage}[t]{0.9\textwidth}
+\vspace{0.15\textheight}
 
-
-\end{minipage}
+\figh{Figs/raw_data.pdf}{0.68}
 
 \note{
+
+  Always ask for the primary data files, even if the present data
+  files are sufficient.
+
+  My favorite example is for a case where a derived column was
+  available but the original columns were not. And actually I had a
+  case like that where just the rounding of the columns was patchy and
+  odd, and I wanted to get access to the original version.
+
+  It turned out that the primary data file was a large excel file with
+  one sheet per subject, and the file I was given was produced
+  by complicated and time-consuming copy-paste by hand. Once I
+  obtained the original file, I saved someone a ton of unnecessary and
+  error-prone work.
+
 }
 \end{frame}
 
@@ -703,15 +717,52 @@ apply to the processing of RNA-seq data?
 \vspace{-15mm} \hspace{0.4\textwidth}
 {\princolorD 16. Ask for metadata}
 
-\hfill
-\begin{minipage}[t]{0.9\textwidth}
+\bigskip\bigskip\bigskip
+\bigskip\bigskip\bigskip
 
+\centering
+\Large
 
-\end{minipage}
+``What the heck is `{\hilit \tt FAD{\textunderscore}NAD SI 8.3{\textunderscore}3.3G}'?''
 
 \note{
+
+  If you don't understand what the variables mean, then you're just
+  analyzing a random pile of numbers rather than really connecting
+  with the data.
+
+  This is my favorite example of this; it's hard to connect with a
+  variable name like this.
+
+  So always ask for meta data.
 }
 \end{frame}
+
+
+
+\begin{frame}{}
+\lfigh{Figs/logo_ask.pdf}{0.2}
+
+\vspace{-15mm} \hspace{0.4\textwidth}
+{\princolorD 16. Ask for metadata}
+
+\vspace{0.15\textheight}
+
+\figh{Figs/data_dict.pdf}{0.68}
+
+
+
+\note{
+
+  And meta data are data, so it's best to have them formulated as a
+  proper data file. Have a data dictionary in a spreadsheet that you
+  can compute on, rather than as an unformatted glossary in a Word
+  document.
+
+}
+\end{frame}
+
+
 
 
 \begin{frame}{}
@@ -720,13 +771,28 @@ apply to the processing of RNA-seq data?
 \vspace{-15mm} \hspace{0.4\textwidth}
 {\princolorD 17. Ask why data are missing}
 
+\vspace{10mm}
+
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
+\bbi
+\item[] Assay failed?
+\item[] Below detection limit?
+\item[] Viewed as outliers?
+\item[] Subjects dropped out?
+\ei
 
 \end{minipage}
 
 \note{
+   Missing data are often informative or require special
+   consideration, so be sure to always ask about them.
+
+   When considering how to handle missing data, it is critical to
+   first understand why they data are missing.
+
+   And sometimes they are not intentionally missing.
 }
 \end{frame}
 
