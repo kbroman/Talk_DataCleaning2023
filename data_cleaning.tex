@@ -803,10 +803,20 @@ apply to the processing of RNA-seq data?
 \vspace{-15mm} \hspace{0.4\textwidth}
 {\princolorE 18. Create checklists \& pipelines}
 
+\bigskip
+
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-
+\bbi
+\item[$\square$] Percent missing genotypes
+\item[$\square$] Sample duplicates
+\item[$\square$] Sex and X/Y genotypes
+\item[$\square$] Heterozygosity
+\item[$\square$] Genotype frequencies
+\item[$\square$] Crossover counts
+\item[$\square$] Genotyping error rates
+\ei
 
 \end{minipage}
 
@@ -826,12 +836,10 @@ apply to the processing of RNA-seq data?
 \vspace{-15mm} \hspace{0.4\textwidth}
 {\princolorE 19. Document not just what but why}
 
-\hfill
-\begin{minipage}[t]{0.9\textwidth}
 
+\vspace{0.13\textheight}
 
-
-\end{minipage}
+\frame{\figh{Figs/example_Rmd.png}{0.74}}
 
 \note{
   For this sort of work, we need things to be {\nhilit more} than
@@ -846,15 +854,13 @@ apply to the processing of RNA-seq data?
 \begin{frame}{}
 \lfigh{Figs/logo_document.pdf}{0.2}
 
-\vspace{-15mm} \hspace{0.4\textwidth}
+\centering
+\Large
+
+\bigskip \bigskip \bigskip
+
 {\princolorE 20. Expect to recheck}
 
-\hfill
-\begin{minipage}[t]{0.9\textwidth}
-
-
-
-\end{minipage}
 
 \note{
   Finally, data cleaning is not a single step in the analysis chain;
