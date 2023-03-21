@@ -48,6 +48,10 @@
     think there are some general principles. Moreover, I think we have
     an important shared experience in data cleaning that we can
     commiserate about, and through which we can learn from each other.
+
+    Slides: {\tt https://bit.ly/datacleaning2023} \\
+    with notes: {\tt https://kbroman.org/Talk\_DataCleaning2023/data\_cleaning\_notes.pdf} \\
+    source: {\tt https://github.com/kbroman/Talk\_DataCleaning2023}
   }
 
 } }
@@ -81,7 +85,7 @@ is messy in its own way.
 
   But {\hilit is} every messy dataset {\vhilit uniquely} messy?
 
-  For sure, many my collaborators have shown impressive creativity in
+  For sure, many of my collaborators have shown impressive creativity in
   their approach to organizing and managing data. But we do see
   many of the same sorts of problems over and over.
 }
@@ -354,7 +358,7 @@ apply to the processing of RNA-seq data?
   The fifth fundamental principle is that dates and categories suck.
   You'll expend an inordinate amount of time dealing with these: typos
   in category labels, different date formats, people who died a decade
-  they were born or lived to be 150.
+  before they were born or lived to be 150.
 
   Just be glad if you're not dealing with time zones.
 
@@ -492,10 +496,6 @@ apply to the processing of RNA-seq data?
     out and plotted them in the margins. Showing the missing values
     can be really important for identifying problems. Here there are
     some HOMA-IR values that are missing but maybe shouldn't be.
-
-    {\nvhilit Note}: when I presented this at csv,conf,v6, I mistakenly said
-    that HOMA-IR is the ratio of glucose to insulin, and the labels on
-    the plots were wrong. Oops!
 }
 \end{frame}
 
@@ -570,7 +570,7 @@ apply to the processing of RNA-seq data?
     provides a heatmap indicating which data points are missing, and
     also the variable types.
 
-    In the right panel, naniar (http://naniar.njtierney.com/)
+    In the right panel, naniar (https://naniar.njtierney.com/)
     provides a scatterplot that include the cases that are missing one
     or both variables.
 }
@@ -681,6 +681,7 @@ apply to the processing of RNA-seq data?
 \end{frame}
 
 
+
 \begin{frame}{}
 \lfigh{Figs/logo_ask.pdf}{0.2}
 
@@ -764,7 +765,6 @@ apply to the processing of RNA-seq data?
 
 
 
-
 \begin{frame}{}
 \lfigh{Figs/logo_ask.pdf}{0.2}
 
@@ -790,9 +790,12 @@ apply to the processing of RNA-seq data?
    consideration, so be sure to always ask about them.
 
    When considering how to handle missing data, it is critical to
-   first understand why they data are missing.
+   first understand why they data are missing. (Sometimes a key
+   question is whether there is information in the missingness.)
 
-   And sometimes they are not intentionally missing.
+   And sometimes they are not intentionally missing. Subjects
+   missing from one file but present in others could indicate that a
+   file was truncated. Be sure to ask!
 }
 \end{frame}
 
@@ -847,6 +850,14 @@ apply to the processing of RNA-seq data?
   also {\nhilit why}. For example, if you decide to omit some subset
   of samples, will you remember 2 years from now just {\nhilit why}
   you chose to omit them?
+
+  A script that automates the process is great, but even better is a
+  reproducible report, like a Jupyter notebook or RMarkdown document,
+  which automates and documents and also captures your reasoning.
+
+  Another advantage of cleaning data within reproducible reports is
+  that of communicating the process and results to collaborators. This
+  is the top of one such document.
 }
 \end{frame}
 
@@ -867,7 +878,8 @@ apply to the processing of RNA-seq data?
   rather, it is an ongoing process that you will need to continually
   revisit as you delve deeper into the data. Keep an eye out for
   hints of problems, and arrange your work with the expectation that
-  you'll need to re-run everything at some point.
+  you'll need to re-run everything at some point, and maybe a number
+  of times.
 }
 \end{frame}
 
